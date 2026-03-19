@@ -1,0 +1,741 @@
+/**
+ * ClearDeal - Frontend Styles (Stripe-like Design)
+ *
+ * Fixed styling - no configuration options
+ *
+ * @author    Marcin Gajewski <kontakt@marcingajewski.pl>
+ * @copyright 2025 marcingajewski.pl
+ */
+
+/* Bootstrap Icons loaded via hookDisplayHeader */
+
+/* ========================================
+   Main Wrapper
+   ======================================== */
+.cleardeal-wrapper {
+    display: inline-flex;
+    align-items: center;
+    margin: 8px 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.cleardeal-content {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    background: #f6f9fc;
+    border: 1px solid #e3e8ee;
+    border-radius: 6px;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #3c4257;
+}
+
+/* ========================================
+   Label
+   ======================================== */
+.cleardeal-label {
+    color: #697386;
+    font-weight: 400;
+}
+
+/* ========================================
+   Price
+   ======================================== */
+.cleardeal-price {
+    font-weight: 600;
+    color: #1a1f36;
+}
+
+/* ========================================
+   Percentage Badge
+   ======================================== */
+.cleardeal-percent {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 4px;
+}
+
+.cleardeal-percent-negative {
+    background: #fce4ec;
+    color: #c41535;
+}
+
+.cleardeal-percent-positive {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+/* ========================================
+   Icon
+   ======================================== */
+.cleardeal-icon {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    cursor: help;
+}
+
+.cleardeal-icon i {
+    font-size: 18px;
+    color: #635bff;
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.cleardeal-icon-img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+/* Icon Position */
+.cleardeal-icon-start .cleardeal-icon {
+    margin-right: 4px;
+}
+
+.cleardeal-icon-end .cleardeal-icon {
+    margin-left: 4px;
+    order: 10;
+}
+
+/* ========================================
+   Tooltip
+   ======================================== */
+.cleardeal-tooltip {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    max-width: 250px;
+    padding: 10px 14px;
+    background: #1a1f36;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    opacity: 1;
+    visibility: hidden;
+    transition: visibility 0.15s ease-in-out;
+    z-index: 10000;
+    pointer-events: none;
+    white-space: normal;
+    text-align: left;
+}
+
+.cleardeal-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: #1a1f36;
+}
+
+/* Tooltip visible on hover */
+.cleardeal-icon:hover .cleardeal-tooltip {
+    visibility: visible;
+}
+
+/* ========================================
+   Hook-specific Styles
+   ======================================== */
+
+/* Product Page - slightly larger */
+.cleardeal-hook-product .cleardeal-content {
+    font-size: 14px;
+    padding: 12px 16px;
+}
+
+.cleardeal-hook-product .cleardeal-icon i {
+    font-size: 20px;
+}
+
+/* Listing - more compact */
+.cleardeal-hook-listing .cleardeal-content {
+    font-size: 12px;
+    padding: 8px 12px;
+    gap: 6px;
+}
+
+.cleardeal-hook-listing .cleardeal-icon i {
+    font-size: 16px;
+}
+
+.cleardeal-hook-listing .cleardeal-percent {
+    padding: 1px 6px;
+    font-size: 11px;
+}
+
+/* Quick View - same as product */
+.cleardeal-hook-quickview .cleardeal-content {
+    font-size: 13px;
+    padding: 10px 14px;
+}
+
+/* ========================================
+   Responsive
+   ======================================== */
+@media (max-width: 768px) {
+    .cleardeal-content {
+        font-size: 12px;
+        padding: 8px 12px;
+        gap: 6px;
+        flex-wrap: wrap;
+    }
+
+    .cleardeal-icon i {
+        font-size: 16px;
+    }
+
+    .cleardeal-tooltip {
+        max-width: 200px;
+        left: 0;
+        transform: none;
+    }
+
+    .cleardeal-tooltip::after {
+        left: 12px;
+        transform: none;
+    }
+
+    .cleardeal-icon-end .cleardeal-tooltip {
+        left: auto;
+        right: 0;
+    }
+
+    .cleardeal-icon-end .cleardeal-tooltip::after {
+        left: auto;
+        right: 12px;
+    }
+}
+
+/* ========================================
+   Chart Trigger Styles
+   ======================================== */
+.cleardeal-has-chart .cleardeal-chart-clickable {
+    cursor: pointer;
+}
+
+.cleardeal-has-chart.cleardeal-chart-trigger-all {
+    cursor: pointer;
+}
+
+.cleardeal-has-chart.cleardeal-chart-trigger-all .cleardeal-content:hover {
+    background: #eef1f5;
+}
+
+/* ========================================
+   Chart Modal
+   ======================================== */
+.cleardeal-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.cleardeal-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cleardeal-modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 31, 54, 0.6);
+    backdrop-filter: blur(4px);
+}
+
+.cleardeal-modal-container {
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transform: scale(0.95) translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.cleardeal-modal.active .cleardeal-modal-container {
+    transform: scale(1) translateY(0);
+}
+
+.cleardeal-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+    background: linear-gradient(135deg, #635bff 0%, #8b85ff 100%);
+    color: #ffffff;
+}
+
+.cleardeal-modal-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cleardeal-modal-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+.cleardeal-modal-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.cleardeal-modal-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.cleardeal-modal-close:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.cleardeal-modal-close svg {
+    width: 20px;
+    height: 20px;
+}
+
+.cleardeal-modal-body {
+    padding: 24px;
+    min-height: 300px;
+}
+
+/* Loading State */
+.cleardeal-chart-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    height: 260px;
+    color: #697386;
+    font-size: 14px;
+}
+
+.cleardeal-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #e3e8ee;
+    border-top-color: #635bff;
+    border-radius: 50%;
+    animation: cleardeal-spin 0.8s linear infinite;
+}
+
+@keyframes cleardeal-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* No Data State */
+.cleardeal-chart-nodata {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    height: 260px;
+    color: #697386;
+    text-align: center;
+}
+
+.cleardeal-chart-nodata svg {
+    color: #e3e8ee;
+}
+
+.cleardeal-chart-nodata p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Chart Content */
+.cleardeal-chart-stats {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.cleardeal-chart-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.cleardeal-chart-stat-label {
+    font-size: 12px;
+    color: #697386;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.cleardeal-chart-stat-value {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1a1f36;
+}
+
+.cleardeal-chart-stat-lowest .cleardeal-chart-stat-value {
+    color: #635bff;
+}
+
+.cleardeal-chart-wrapper {
+    height: 250px;
+    position: relative;
+}
+
+.cleardeal-chart-wrapper canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* ========================================
+   Chart Modal Responsive
+   ======================================== */
+@media (max-width: 768px) {
+    .cleardeal-modal-container {
+        width: 95%;
+        max-height: 85vh;
+    }
+
+    .cleardeal-modal-header {
+        padding: 16px 20px;
+    }
+
+    .cleardeal-modal-title {
+        font-size: 16px;
+    }
+
+    .cleardeal-modal-body {
+        padding: 16px;
+    }
+
+    .cleardeal-chart-stats {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .cleardeal-chart-stat-value {
+        font-size: 20px;
+    }
+
+    .cleardeal-chart-wrapper {
+        height: 200px;
+    }
+}
+
+/* ========================================
+   Creative Elements Widget Styles
+   ======================================== */
+
+/* Widget Wrapper */
+.cleardeal-widget-wrapper {
+    display: inline-flex;
+    align-items: center;
+    margin: 8px 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Widget Content Container */
+.cleardeal-widget-content {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    background: #f6f9fc;
+    border: 1px solid #e3e8ee;
+    border-radius: 6px;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #3c4257;
+}
+
+/* Widget Label */
+.cleardeal-widget-label {
+    color: #697386;
+    font-weight: 400;
+}
+
+/* Widget Price */
+.cleardeal-widget-price {
+    font-weight: 600;
+    color: #1a1f36;
+}
+
+/* Widget Percentage Badge */
+.cleardeal-widget-percent {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 4px;
+}
+
+.cleardeal-widget-percent-negative {
+    background: #fce4ec;
+    color: #c41535;
+}
+
+.cleardeal-widget-percent-positive {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+/* Widget Icon */
+.cleardeal-widget-icon {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    cursor: help;
+}
+
+.cleardeal-widget-icon i {
+    font-size: 18px;
+    color: #635bff;
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.cleardeal-widget-icon img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+/* Widget Icon Position */
+.cleardeal-widget-icon-start .cleardeal-widget-icon {
+    margin-right: 4px;
+}
+
+.cleardeal-widget-icon-end .cleardeal-widget-icon {
+    margin-left: 4px;
+    order: 10;
+}
+
+/* Widget Tooltip */
+.cleardeal-widget-tooltip {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    max-width: 250px;
+    padding: 10px 14px;
+    background: #1a1f36;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    opacity: 1;
+    visibility: hidden;
+    transition: visibility 0.15s ease-in-out;
+    z-index: 10000;
+    pointer-events: none;
+    white-space: normal;
+    text-align: left;
+}
+
+.cleardeal-widget-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: #1a1f36;
+}
+
+.cleardeal-widget-icon:hover .cleardeal-widget-tooltip {
+    visibility: visible;
+}
+
+/* Widget Responsive */
+@media (max-width: 768px) {
+    .cleardeal-widget-content {
+        font-size: 12px;
+        padding: 8px 12px;
+        gap: 6px;
+        flex-wrap: wrap;
+    }
+
+    .cleardeal-widget-icon i {
+        font-size: 16px;
+    }
+
+    .cleardeal-widget-tooltip {
+        max-width: 200px;
+        left: 0;
+        transform: none;
+    }
+
+    .cleardeal-widget-tooltip::after {
+        left: 12px;
+        transform: none;
+    }
+
+    .cleardeal-widget-icon-end .cleardeal-widget-tooltip {
+        left: auto;
+        right: 0;
+    }
+
+    .cleardeal-widget-icon-end .cleardeal-widget-tooltip::after {
+        left: auto;
+        right: 12px;
+    }
+}
+
+/* ========================================
+   Widget Presets
+   ======================================== */
+
+/* Default preset - standard appearance (uses base widget styles above) */
+
+/* Minimal preset - transparent, text-only look */
+.cleardeal-widget-preset-minimal .cleardeal-widget-content {
+    background: transparent;
+    border: none;
+    padding: 4px 0;
+}
+
+.cleardeal-widget-preset-minimal .cleardeal-widget-icon i {
+    color: #9ca3af;
+}
+
+.cleardeal-widget-preset-minimal .cleardeal-widget-label {
+    color: #6b7280;
+}
+
+.cleardeal-widget-preset-minimal .cleardeal-widget-price {
+    color: #1f2937;
+}
+
+.cleardeal-widget-preset-minimal .cleardeal-widget-percent-negative {
+    background: transparent;
+    color: #dc2626;
+}
+
+.cleardeal-widget-preset-minimal .cleardeal-widget-percent-positive {
+    background: transparent;
+    color: #059669;
+}
+
+/* Bold preset - gradient background, white text */
+.cleardeal-widget-preset-bold .cleardeal-widget-content {
+    background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+    border: none;
+    border-radius: 8px;
+}
+
+.cleardeal-widget-preset-bold .cleardeal-widget-icon i {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.cleardeal-widget-preset-bold .cleardeal-widget-label {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.cleardeal-widget-preset-bold .cleardeal-widget-price {
+    color: #fff;
+}
+
+.cleardeal-widget-preset-bold .cleardeal-widget-percent-negative,
+.cleardeal-widget-preset-bold .cleardeal-widget-percent-positive {
+    background: #fbbf24;
+    color: #1a1f36;
+}
+
+/* Custom preset - uses base styles, fully controlled by CE style controls */
+
+/* ========================================
+   Dark Theme Support (optional)
+   ======================================== */
+@media (prefers-color-scheme: dark) {
+    /* Uncomment below for dark mode support */
+    /*
+    .cleardeal-content,
+    .cleardeal-widget-content {
+        background: #2a2f45;
+        border-color: #3d4466;
+        color: #e0e0e0;
+    }
+
+    .cleardeal-label,
+    .cleardeal-widget-label {
+        color: #9ca3af;
+    }
+
+    .cleardeal-price,
+    .cleardeal-widget-price {
+        color: #ffffff;
+    }
+
+    .cleardeal-percent-negative,
+    .cleardeal-widget-percent-negative {
+        background: rgba(196, 21, 53, 0.2);
+        color: #ff6b8a;
+    }
+
+    .cleardeal-percent-positive,
+    .cleardeal-widget-percent-positive {
+        background: rgba(46, 125, 50, 0.2);
+        color: #69f0ae;
+    }
+
+    .cleardeal-icon i,
+    .cleardeal-widget-icon i {
+        color: #8b85ff;
+    }
+    */
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <name>cleardeal</name>
+    <displayName><![CDATA[ClearDeal - Lowest Price]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[Ensures compliance with the EU Omnibus Directive by displaying the lowest price from a specified period.]]></description>
+    <author><![CDATA[marcingajewski.pl]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+    <limited_countries></limited_countries>
+</module>
