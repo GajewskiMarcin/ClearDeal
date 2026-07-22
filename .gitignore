@@ -1,2 +1,14 @@
-nul
+# Build artifacts — the module ZIP is published via GitHub Releases
+cleardeal.zip
+*.zip
+
+# Other modules kept in this workspace but not part of this repository
+mgomnibus/
+wiseblock/
+secret-sauce-integration-guide.md
+
+# Tooling / OS
 .claude/
+nul
+.DS_Store
+Thumbs.db
