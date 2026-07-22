@@ -3,6 +3,7 @@
  *
  * @author    Marcin Gajewski <kontakt@marcingajewski.pl>
  * @copyright 2025 marcingajewski.pl
+ * @license   https://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
  *}
 
 <form action="{$admin_link}&tab=settings" method="post" enctype="multipart/form-data" class="cleardeal-form">
