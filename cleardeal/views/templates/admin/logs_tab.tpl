@@ -3,7 +3,7 @@
  *
  * @author    Marcin Gajewski <kontakt@marcingajewski.pl>
  * @copyright 2025 marcingajewski.pl
- * @license   https://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
+ * @license   https://opensource.org/licenses/AFL-3.0  Academic Free License 3.0 (AFL-3.0)
  *}
 
 {* Build filter query string for pagination *}

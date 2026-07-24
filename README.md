@@ -2,7 +2,7 @@
 
 [![PrestaShop](https://img.shields.io/badge/PrestaShop-8.x%20%7C%209.x-blue)](https://www.prestashop.com/)
 [![PHP](https://img.shields.io/badge/PHP-8.1%2B-777bb4)](https://www.php.net/)
-[![License](https://img.shields.io/badge/License-GPL--3.0-green)](LICENSE)
+[![License](https://img.shields.io/badge/License-AFL--3.0-green)](LICENSE)
 [![Release](https://img.shields.io/github/v/release/GajewskiMarcin/ClearDeal?include_prereleases)](https://github.com/GajewskiMarcin/ClearDeal/releases)
 
 **ClearDeal** tracks the price history of your products and displays the **lowest price from the last N days** next to the current price — the information required by the **EU Omnibus Directive** (2019/2161) whenever you announce a price reduction.
@@ -161,7 +161,7 @@ Issues and pull requests are welcome. If you're reporting a bug, please include 
 
 ## License
 
-Released under the [GNU General Public License v3.0](LICENSE).
+Released under the [Academic Free License 3.0 (AFL-3.0)](LICENSE) — the license used for PrestaShop modules.
 
 ## Author
 

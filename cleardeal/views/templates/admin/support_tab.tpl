@@ -3,7 +3,7 @@
  *
  * @author    Marcin Gajewski <kontakt@marcingajewski.pl>
  * @copyright 2025 marcingajewski.pl
- * @license   https://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
+ * @license   https://opensource.org/licenses/AFL-3.0  Academic Free License 3.0 (AFL-3.0)
  *}
 
 <div class="cleardeal-about">
@@ -32,7 +32,7 @@
             <div class="cleardeal-about-info-item">
                 <span class="cleardeal-about-info-label">{l s='License' mod='cleardeal'}</span>
                 <span class="cleardeal-about-info-value">
-                    <a href="https://github.com/GajewskiMarcin/ClearDeal/blob/main/LICENSE" target="_blank">GPL-3.0</a>
+                    <a href="https://github.com/GajewskiMarcin/ClearDeal/blob/main/LICENSE" target="_blank">AFL-3.0</a>
                 </span>
             </div>
         </div>

@@ -7,21 +7,18 @@
  *
  * @author    Marcin Gajewski <kontakt@marcingajewski.pl>
  * @copyright 2025 marcingajewski.pl
- * @license   https://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
+ * @license   https://opensource.org/licenses/AFL-3.0  Academic Free License 3.0 (AFL-3.0)
  * @version   1.0.0
  *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
+ * NOTICE OF LICENSE
  *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program. If not, see <https://www.gnu.org/licenses/>.
+ * This source file is subject to the Academic Free License 3.0 (AFL-3.0)
+ * that is bundled with this package in the file LICENSE.
+ * It is also available through the world-wide-web at this URL:
+ * https://opensource.org/licenses/AFL-3.0
+ * If you did not receive a copy of the license and are unable to obtain it
+ * through the world-wide-web, please send an email to kontakt@marcingajewski.pl
+ * so we can send you a copy immediately.
  */
 
 if (!defined('_PS_VERSION_')) {
