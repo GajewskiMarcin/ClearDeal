@@ -5,6 +5,15 @@ All notable changes to ClearDeal are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.1] — 2026-11-27
+
+### Changed
+- **Support tab**: the coffee button links to Ko-fi.
+
+### Added
+- **Support tab**: a Quince Project block with a link to the project on GitHub,
+  translated into all 23 languages of the module.
+
 ## [1.0.0] — 2026-07-22
 
 First public release.

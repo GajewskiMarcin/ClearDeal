@@ -218,7 +218,12 @@ $_MODULE['<{cleardeal}prestashop>support_tab_ac26bdde7ed74ae06f2deeeb1522f10d'] 
 $_MODULE['<{cleardeal}prestashop>support_tab_197b057f8d73ded07f9d4dd27678473d'] = 'Přidat se k diskuzi';
 $_MODULE['<{cleardeal}prestashop>support_tab_519cd44a1ebb9264df8f1fb153857995'] = 'Podpořte projekt';
 $_MODULE['<{cleardeal}prestashop>support_tab_2d242ede0fceb19b3c357061ff8c378d'] = 'Pokud vám ClearDeal přijde užitečný, zvažte podporu jeho vývoje';
-$_MODULE['<{cleardeal}prestashop>support_tab_41ce98493ec922bf9b7ea03f749aef64'] = 'Kupte mi kávu';
+$_MODULE['<{cleardeal}prestashop>support_tab_5dc4a5bd36dc8b81f76f1336858f6864'] = 'Podpořit na Ko-fi';
+$_MODULE['<{cleardeal}prestashop>support_tab_f53039c4d252aedaf77b9fe121b63dde'] = 'Objevte šablonu a engine pro PrestaShop';
+$_MODULE['<{cleardeal}prestashop>support_tab_d323f187961a7c01bc2accc96f04ebf6'] = 'Sada více než 20 modulů a šablona, díky kterým můžete volně spravovat vzhled i obsah obchodu a které podporují procesy v administraci.';
+$_MODULE['<{cleardeal}prestashop>support_tab_6ae1a2afe99364509005c2bd4dc3cbf6'] = 'Stáhněte si zdarma z GitHubu';
+$_MODULE['<{cleardeal}prestashop>support_tab_fbf7a6366d0bb10a12d66347e890a3c1'] = 'PHP 8.1 nebo novější';
+$_MODULE['<{cleardeal}prestashop>support_tab_fd6a28b29f89b194298ebb0f921f274f'] = 'Licence OSL-3.0';
 $_MODULE['<{cleardeal}prestashop>support_tab_02f95d87a890c14e9293dc55e7f158a9'] = 'Hvězdička na GitHubu';
 $_MODULE['<{cleardeal}prestashop>support_tab_79bc8ea9cb24f51bf41148643f0b4309'] = 'Systémové informace';
 $_MODULE['<{cleardeal}prestashop>support_tab_b3481e41d844a5db96ca7b7ae0f01495'] = 'Verze PrestaShop';

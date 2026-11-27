@@ -159,6 +159,16 @@ Issues and pull requests are welcome. If you're reporting a bug, please include 
 
 ---
 
+## Support
+
+If ClearDeal saves you time, you can support its development on **[Ko-fi](https://ko-fi.com/quinceproject)**.
+
+### From the same author
+
+**[Quince Project](https://quinceproject.github.io/)**: a theme and content engine for PrestaShop, extended with a suite of functional modules. Free and open source under OSL-3.0.
+
+---
+
 ## License
 
 Released under the [Academic Free License 3.0 (AFL-3.0)](LICENSE) — the license used for PrestaShop modules.

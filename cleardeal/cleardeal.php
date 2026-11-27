@@ -33,7 +33,7 @@ class ClearDeal extends Module
     {
         $this->name = 'cleardeal';
         $this->tab = 'front_office_features';
-        $this->version = '1.0.0';
+        $this->version = '1.0.1';
         $this->author = 'marcingajewski.pl';
         $this->need_instance = 0;
         $this->bootstrap = true;

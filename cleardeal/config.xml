@@ -2,7 +2,7 @@
 <module>
     <name>cleardeal</name>
     <displayName><![CDATA[ClearDeal - Lowest Price]]></displayName>
-    <version><![CDATA[1.0.0]]></version>
+    <version><![CDATA[1.0.1]]></version>
     <description><![CDATA[Ensures compliance with the EU Omnibus Directive by displaying the lowest price from a specified period.]]></description>
     <author><![CDATA[marcingajewski.pl]]></author>
     <tab><![CDATA[front_office_features]]></tab>

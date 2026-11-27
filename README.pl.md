@@ -159,6 +159,16 @@ Zgłoszenia i pull requesty są mile widziane. Zgłaszając błąd, podaj wersj�
 
 ---
 
+## Wsparcie
+
+Jeśli ClearDeal oszczędza Ci czas, możesz wesprzeć jego rozwój na **[Ko-fi](https://ko-fi.com/quinceproject)**.
+
+### Od tego samego autora
+
+**[Quince Project](https://quinceproject.github.io/)**: motyw i silnik treści dla PrestaShop, rozszerzony zestawem modułów funkcjonalnych. Darmowy i otwarty, na licencji OSL-3.0.
+
+---
+
 ## Licencja
 
 Udostępniony na licencji [Academic Free License 3.0 (AFL-3.0)](LICENSE) — licencji stosowanej dla modułów PrestaShop.

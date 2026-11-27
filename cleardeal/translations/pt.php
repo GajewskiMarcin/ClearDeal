@@ -218,7 +218,12 @@ $_MODULE['<{cleardeal}prestashop>support_tab_ac26bdde7ed74ae06f2deeeb1522f10d'] 
 $_MODULE['<{cleardeal}prestashop>support_tab_197b057f8d73ded07f9d4dd27678473d'] = 'Participar na discussão';
 $_MODULE['<{cleardeal}prestashop>support_tab_519cd44a1ebb9264df8f1fb153857995'] = 'Apoiar o projeto';
 $_MODULE['<{cleardeal}prestashop>support_tab_2d242ede0fceb19b3c357061ff8c378d'] = 'Se considera o ClearDeal útil, considere apoiar o seu desenvolvimento';
-$_MODULE['<{cleardeal}prestashop>support_tab_41ce98493ec922bf9b7ea03f749aef64'] = 'Ofereça-me um café';
+$_MODULE['<{cleardeal}prestashop>support_tab_5dc4a5bd36dc8b81f76f1336858f6864'] = 'Apoiar no Ko-fi';
+$_MODULE['<{cleardeal}prestashop>support_tab_f53039c4d252aedaf77b9fe121b63dde'] = 'Conheça o tema e o motor para PrestaShop';
+$_MODULE['<{cleardeal}prestashop>support_tab_d323f187961a7c01bc2accc96f04ebf6'] = 'Mais de 20 módulos e um tema para gerir com total liberdade o aspeto e o conteúdo da sua loja, além de apoiar os processos de back-office.';
+$_MODULE['<{cleardeal}prestashop>support_tab_6ae1a2afe99364509005c2bd4dc3cbf6'] = 'Descarregue gratuitamente a partir do GitHub';
+$_MODULE['<{cleardeal}prestashop>support_tab_fbf7a6366d0bb10a12d66347e890a3c1'] = 'PHP 8.1 ou superior';
+$_MODULE['<{cleardeal}prestashop>support_tab_fd6a28b29f89b194298ebb0f921f274f'] = 'Licença OSL-3.0';
 $_MODULE['<{cleardeal}prestashop>support_tab_02f95d87a890c14e9293dc55e7f158a9'] = 'Dar estrela no GitHub';
 $_MODULE['<{cleardeal}prestashop>support_tab_79bc8ea9cb24f51bf41148643f0b4309'] = 'Informações do sistema';
 $_MODULE['<{cleardeal}prestashop>support_tab_b3481e41d844a5db96ca7b7ae0f01495'] = 'Versão do PrestaShop';

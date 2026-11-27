@@ -65,6 +65,7 @@ class AdminClearDealController extends ModuleAdminController
 
         // Add CSS and JS
         $this->addCSS($this->module->getPathUri() . 'views/css/admin.css');
+        $this->addCSS($this->module->getPathUri() . 'views/css/quince-promo.css');
         $this->addJS($this->module->getPathUri() . 'views/js/admin.js');
 
         // Get current tab
